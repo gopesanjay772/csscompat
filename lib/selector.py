@@ -1,3 +1,7 @@
 class Selector(object):
-    def __init__(self, raw):
-        __raw = ""
+    TYPE_CLASS = 'class'
+    TYPE_ID = 'id'
+    TYPE_ELEMENT = 'element'
+    def __init__(self, raw, type):
+        __raw = raw
+        _type = type
